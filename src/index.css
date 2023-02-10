@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+
+* {
+  /* --color1: #4D626F; */
+  --color1: #EEEEEE;
+  /* --color2:#a5bac6; */
+  --color2: #94a1a9;
+  --color3: #dadde0;
+  --color4:#009DDA;
+  font-family: 'Assistant', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  *{
+    font-size: 12px;
+  }
+}

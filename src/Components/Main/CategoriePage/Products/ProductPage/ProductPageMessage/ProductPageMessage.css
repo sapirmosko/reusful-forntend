@@ -1,0 +1,28 @@
+.ProductPageMessageContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductPageMessageContent form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ProductPageMessageContent textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-bottom: 5px;
+}
+
+.ProductPageMessageContent button{
+    width: 100%;
+    background-color: var(--color4);
+    border: none;
+    height: 30px;
+}

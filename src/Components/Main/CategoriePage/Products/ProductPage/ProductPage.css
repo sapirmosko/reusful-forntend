@@ -1,0 +1,213 @@
+.ProductPage {
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.ProductPageContent {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ProductPageTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 10%;
+    position: relative;
+}
+
+.ProductPageTitle h3 {
+    margin: 0;
+}
+
+.ProductPageImage {
+    /* overflow-x: scroll; */
+    width: 90%;
+    height: 60%;
+    /* border: 4px solid var(--color4); */
+    /* border-top: 4px solid var(--color4); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.SingleProductImage img {
+    /* width: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-list {
+    width: 900%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-list img {
+    width: 100%;
+}
+
+.ProductPageImage img {
+    max-width: 100%;
+    max-height: 95%;
+}
+
+.ProductPageDescription {
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 90%;
+    height: 30%;
+}
+
+.ProductPageSecondaryInfo {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: var(--color3);
+}
+
+.ProductPageShowMap{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.overlay{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.281);
+    z-index: 8;
+}
+
+
+.ProductPageStatus,
+.ProductPageDate,
+.ProductPagePrice,
+.ProductPageCategorieName {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* justify-content: center; */
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.ProductPageUsername {
+    color: white;
+    background-color: var(--color2);
+    box-sizing: border-box;
+    padding: 5px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductPageAddToCart {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color4);
+    color: white;
+    cursor: pointer;
+}
+
+.ProductPageAddToCartOrRemove{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color4);
+    color: white;
+    cursor: pointer;
+}
+
+.ProductPageEdit {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color2);
+}
+
+@media screen and (max-width: 768px) {
+
+    .ProductPage {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .ProductPageContent {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ProductPageDescription {
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 150px;
+    }
+
+    .ProductPageSecondaryInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        height: 40%;
+    }
+
+    .ProductPageStatus,
+    .ProductPageDate,
+    .ProductPagePrice,
+    .ProductPageCategorieName {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 20%;
+
+    }
+
+    .ProductPageAddToCart {
+        height: 20%;
+    }
+}

@@ -1,0 +1,31 @@
+.Home {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.WelcomeComponentDiv {
+    width: 100%;
+    height: 80%;
+}
+
+.CategoriesDiv {
+    /* padding-top: 100px; */
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    /* height: 65%; */
+    background-color: var(--color4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .CategoriesDiv{
+        gap: 20px;
+    }
+}

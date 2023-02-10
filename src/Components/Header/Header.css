@@ -1,0 +1,52 @@
+.Header {
+	max-width: 100%;
+    height: 10vh;
+    /* margin: 0 auto; */
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+}
+.HeaderHeadline{
+    min-width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeaderHeadline img{
+    width: 200px;
+}
+
+
+.HeaderLogged{
+    min-width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.HeaderLogged button{
+    text-decoration: none;
+    color: var(--color2);
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.HeaderLogged a{
+    text-decoration: none;
+    color: var(--color2);
+    padding: 10px;
+}
+
+.HeaderHeadline a{
+    text-decoration: none;
+    color: var(--color2);
+}

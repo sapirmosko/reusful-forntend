@@ -1,0 +1,113 @@
+.CategoriePage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.CategoriePageContent {
+    width: 80%;
+}
+
+.CategoriePageFilters {
+    box-sizing: border-box;
+    /* padding: 20px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+
+.CategoriePageSearch {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color4);
+    margin-bottom: 20px;
+}
+
+.CategoriePage .CategoriePageSearch input {
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.CategoriePage .CategoriePageSearch input::placeholder {
+    /* text-align: center; */
+    padding-left: 10px;
+    font-size: 18px;
+    /* color: var(--color3); */
+}
+
+.CategoriePageProducts {
+    height: 87%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+
+.Filters {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.Filters h2 {
+    margin-bottom: 10px;
+}
+
+.Filters input[type="range"] {
+    width: 100%;
+}
+
+
+.FiltersPriceRange {
+    background-color: var(--color1);
+    /* height: 200px; */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.FiltersPriceRangeSpan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .CategoriePage{
+        display: flex;
+        /* height: 100%; */
+    }
+
+    .CategoriePageContent{
+        width: 100%;
+    }
+
+    .CategoriePageFilters{
+        width: 100%;
+        padding-bottom: 0px;
+        display: none;
+        
+    }
+
+    .CategoriePageProducts{
+        height: 75%;
+    }
+}
